@@ -1,7 +1,7 @@
 {
   "name": "Heroku-pipeline-test",
   "scripts": {
-    "postdeploy": "bin/setup"
+    "postdeploy": "bundle exec rails db:migrate"
   },
   "env": {
     "LANG": {

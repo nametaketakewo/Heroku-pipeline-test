@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :guests
   resources :control_panels
   resources :blogs
   root to: 'users#index'

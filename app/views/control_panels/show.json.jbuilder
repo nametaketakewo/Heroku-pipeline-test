@@ -1,0 +1,1 @@
+json.partial! "control_panels/control_panel", control_panel: @control_panel

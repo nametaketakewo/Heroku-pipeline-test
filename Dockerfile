@@ -1,4 +1,7 @@
 FROM ruby:latest
+FROM ruby:latest
+FROM ruby:latest
+FROM ruby:latest
 
 ENV LANG C.UTF-8
 RUN apt-get update -qq && apt-get install -yy build-essential libpq-dev nodejs npm mariadb-client postgresql-client

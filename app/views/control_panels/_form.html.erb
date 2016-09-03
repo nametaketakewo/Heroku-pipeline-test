@@ -1,0 +1,17 @@
+<%= form_for(control_panel) do |f| %>
+  <% if control_panel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(control_panel.errors.count, "error") %> prohibited this control_panel from being saved:</h2>
+
+      <ul>
+      <% control_panel.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

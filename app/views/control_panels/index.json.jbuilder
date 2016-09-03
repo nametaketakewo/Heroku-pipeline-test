@@ -1,0 +1,1 @@
+json.array! @control_panels, partial: 'control_panels/control_panel', as: :control_panel

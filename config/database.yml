@@ -49,7 +49,5 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: Heroku-pipeline-test_production
-  username: Heroku-pipeline-test
-  password: <%= ENV['HEROKU-PIPELINE-TEST_DATABASE_PASSWORD'] %>
